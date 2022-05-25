@@ -10,7 +10,7 @@ public class Buldozer extends Vechicle  implements CombustionEngine{
 
     @Override
     public void startEngine() {
-
+        System.out.println("Starting engine");
     }
 
     //    @Override

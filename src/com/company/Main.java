@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.pojazdy.*;
+import com.company.pojazdy.other.CombustionEngine;
 
 public class Main {
 
@@ -43,7 +44,7 @@ public class Main {
 
         //tab2
 
-            Vechicle[] tab2 = new Vechicle[10];
+            CombustionEngine[] tab2 = new CombustionEngine[10];
             tab2[0] = sedan1;
             tab2[1] = bus1;
             tab2[2] = tram1;
@@ -56,7 +57,7 @@ public class Main {
             tab2[9] = carAmfibia1;
 
             for (int i = 0; i < tab2.length; i++) {
-                tab2[i].
+                tab2[i].startEngine();
             }
 
 
