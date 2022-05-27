@@ -1,9 +1,16 @@
 package com.company.pojazdy;
 
-public class Bicycle extends Vechicle  {
+import com.company.pojazdy.other.Naziemne;
 
-    public Bicycle(String className, Integer price, VechicleType type) {
-        super(className, price, type);
+public class Bicycle extends Vechicle implements Naziemne{
+
+    public Bicycle(String className, Integer price,int sits, VechicleType type) {
+        super(className, price, type, sits);
+    }
+
+    @Override
+    public void ride(Integer distance) {
+        System.out.println(getclassName() +" Przejechal "+distance+" metrow");
     }
 
 //    @Override

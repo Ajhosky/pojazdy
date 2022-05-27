@@ -1,5 +1,5 @@
 package com.company.pojazdy.other;
 
-public interface CombustionEngine {
+public interface HasEngine {
     void startEngine();
 }

@@ -4,18 +4,17 @@ public abstract  class Vechicle {
     public Integer price;
     public VechicleType type;
     public String className;
+    public String velocity;
+    public int sits;
 
     public void sell() {
         System.out.println(this.getclassName() + " selling for " + getPrice());
     }
-    public void  buy(){
+    public void buy(){
         System.out.println(this.getclassName() + " buying for " + getPrice());
     }
-//    public void startEngine() {
-//        System.out.println(this.getclassName() + " is starting the engine");
-//    }
 
-    public Vechicle( String className,Integer price ,VechicleType type) {
+    public Vechicle(String className, Integer price, VechicleType type, int sits) {
         this.price = price;
         this.type = type;
         this.className = className;
@@ -44,4 +43,6 @@ public abstract  class Vechicle {
     public void setclassName(String className) {
         className = className;
     }
+
+
 }
